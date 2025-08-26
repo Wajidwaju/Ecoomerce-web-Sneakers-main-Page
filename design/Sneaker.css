@@ -1,0 +1,248 @@
+body {
+      font-family: "Kumbh Sans", sans-serif ;
+      width:100%;
+    
+    }
+
+
+
+/* NavBar */
+
+.navBar{
+    width: 100%;
+    height: 50px;
+      /* background-color: hsl(0, 0%, 100%); */
+      background-color: #ccc;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+
+}
+
+.nav-content{
+    width: 80%;
+    height: 8vh;
+      box-shadow: 10px 10px 10px 5px hsl(223, 64%, 98%);   
+      display: flex;
+    align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+ 
+}
+
+.nav-logo{
+    width: 30%; 
+ 
+}
+.nav-logo img{
+    width: 100%;
+    height: 4vh;
+}
+
+.nav-items{
+    width: 100%;   
+    display: flex;
+    justify-content: start;
+    
+    
+}
+
+.nav-items ul{
+    width: 70%;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-items li,a {
+    list-style:none;
+    text-decoration: none;
+    color:  hsl(219, 9%, 45%);
+    font-weight: 600;
+}
+.nav-items a:hover{
+    color:  hsl(26, 100%, 55%);
+    border-bottom: 2px solid  hsl(26, 100%, 55%);
+}
+.nav-btns{
+    width: 40%;
+    height: 80px;   
+    display: flex;
+  justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+.nav-btn1{
+    border: none;
+    cursor: pointer;
+    background: transparent;
+
+}
+.nav-btn1 img{
+    height:15px;
+}
+
+.nav-btn2{
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    background: transparent;
+      
+}
+.nav-btn2 img{
+    height:30px;
+}
+.nav-btn2 img:hover {
+    border: 3px solid  hsl(26, 100%, 55%);
+
+    border-radius: 55%;
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+margin: auto;
+}
+
+ /* Bottem section */   
+ .items{
+  width: 100%;
+  margin-top:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; 
+    background-color: hsl(0, 0%, 100%);
+   box-shadow: 15px 15px 15px 15px hsl(0, 0%, 100%);
+ }
+
+
+ /* Content section */
+.container{
+   width: 40%;
+  margin-bottom:10%;
+
+}
+
+
+sup{
+    background: black;
+    color: #efefef;
+}
+.container h4{
+    color: hsl(220, 14%, 75%);
+   
+}
+
+.container h3{
+    text-decoration: line-through;
+    font-size: 10px;
+}
+
+.cart-items{
+  width: 100%;
+margin: auto;
+display: flex;
+justify-content: center;
+gap:10px;
+
+   
+}
+.cart-btn{  
+        width: 20%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+   background-color:  hsl(220, 14%, 75%);
+            }
+.value{
+    font-size: 18px;
+    font-weight:700;
+      color: hsl(0, 0%, 0%);
+  
+     
+}
+.cart-btn button{
+    border: transparent;  
+    margin: 1%;
+    background: transparent;
+      
+}
+
+ #cont-cart {
+    width: 180px;
+    padding: 2%;
+    font-size: 12px;
+    font-weight: 600;
+    border: transparent;
+    cursor: pointer;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 5px;
+    
+ }
+
+    /* Lightbox Overlay */
+ 
+
+    .lightbox-content {
+      position: relative;
+      /* background: white; */
+      border-radius: 12px;
+      padding: 10px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .lightbox-content img {
+      width:90%;
+      border-radius: 10px;
+
+    }
+
+    /* Navigation arrows */
+    .prev,.next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: white;
+      border-radius: 50%;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+    }
+    .prev { left: -12px; }
+    .next { right: -1px; }
+
+    /* Close button */
+    /* .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 22px;
+      font-weight: bold;
+      color: orange;
+      cursor: pointer;
+    } */
+
+    /* Thumbnails */
+    .thumbnails {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .thumbnails img {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: 0.3s;
+    }
+    .thumbnails img.active {
+      border: 2px solid orange;
+    }
