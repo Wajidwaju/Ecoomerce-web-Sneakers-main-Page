@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="Sneaker.css">
+    
+    <link rel="stylesheet" href="media1.css">
+  
+    <title>Sneaker</title>
+</head>
+<body>
+
+    <div class="sneaker">
+                 <!-- Sidebar Menu -->
+      <div class="sidebar" id="sidebar">
+
+        <div class="close-btn" id="close-btn">✕</div>
+
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Overlay -->
+      <div class="overlay" id="overlay"></div>
+
+
+          <nav class="navBar">
+              <!-- Hamburger button -->
+        <div class="menu-btn"                id="menu-btn">
+            ☰
+               </div>
+              <div class="nav-content">
+                
+                <div class="nav-logo">
+
+                  <img id="logo" src="../images/logo.svg" alt="">
+              </div>
+              <ul class="nav-links">
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+                </div>  
+          <div class="nav-btns">
+                  <button id="cartBtn" class="cart-btn">
+
+                      <img id="cartCount" src="../images/icon-cart.svg">
+
+                  </button>
+                  <!-- Cart Box -->
+              <div id="cartBox" class="cart-box">
+              <div class="cart-content">
+
+                    <span class="close">&times;</span>
+
+                    <h2>Your Cart</h2>
+
+                    <ul id="cartItems"></ul>
+            </div>
+            </div>
+                  <button class="nav-btn2"><img id="profile" src="../images/image-avatar.png">
+                  </button>
+                </div>
+
+       
+          </nav>
+      
+      <div class="items">
+            
+        <div class="lightbox-content">
+
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+
+      <img id="mainImage" src="../images/image-product-1.jpg" alt="Product">
+
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+      <div class="thumbnails">
+        <img src="../images/image-product-1-thumbnail.jpg" onclick="setSlide(0)" class="active">
+        <img src="../images/image-product-2-thumbnail.jpg" onclick="setSlide(1)">
+        <img src="../images/image-product-3-thumbnail.jpg" onclick="setSlide(2)">
+        <img src="../images/image-product-4-thumbnail.jpg" onclick="setSlide(3)">
+      </div>
+        </div>
+
+            <div class="container">
+                <div class="box">
+
+               <h4 class="strt-line">SNEAKER COMPANY</h4>
+                <h1>Fall Limited Edition <br>Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+         <div class="sale">   <h2> $125.00 <span class="colr">50%</span></h2>
+                <h3>$250.00</h3>
+              </div>
+             
+
+     <div class="product">
+
+
+    <div class="quantity-box">
+
+     <button id="decrement">
+          <img src="../images/icon-minus.svg">
+          </button>
+
+  <input type="text" class="cart-btn" id="quantity" value="1" readonly>
+                       
+    <button id="increment">
+      <img src="../images/icon-plus.svg">
+    </button> 
+                </div>
+           <button id="addToCart" class="cont-cart">
+       <img src="../images/icon-cart.svg">   Add to Cart
+    </button>
+    
+   </div>
+                    
+   
+
+      </div>
+    </div>
+        </div>
+         </div>
+ <script src="main.js"></script>
+</body>
+</html>
